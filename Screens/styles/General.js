@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
   exploreBox:{
     backgroundColor: 'gray',
     padding: 20,
-    borderRadius: 5,
+    borderRadius: 25,
     width: 300,
     height: 150,
     marginTop: 20,
