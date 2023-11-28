@@ -8,6 +8,21 @@ import ARVision from "./Screens/ARVision";
 import SignIn from "./Screens/SignIn/SignIn";
 import WelcomeButton from "./Screens/components/welcomeComponent/WelcomeButton"
 
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+import App from './App';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+    <React.StrictMode>
+        <BrowserRouter>
+           <App />
+        </BrowserRouter>
+    </React.StrictMode>
+);
+
+
 export {
   WelcomeScreen,
   Services,
@@ -16,5 +31,5 @@ export {
   ReserveScreen,
   ARVision,
   PickTime,
-    SignIn
+  SignIn
 }
