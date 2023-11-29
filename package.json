@@ -17,7 +17,7 @@
     "expo-camera": "~12.0.3",
     "expo-cli": "^6.0.6",
     "expo-status-bar": "~1.1.0",
-    "react": "^17.0.1",
+    "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-native": "^0.71.3",
     "react-native-calendars": "^1.1280.0",

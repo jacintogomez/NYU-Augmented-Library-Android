@@ -1,6 +1,5 @@
 import 'react-native-gesture-handler';
 import React from 'react';
-import {Routes,Route} from 'react-router-dom';
 import {createStackNavigator} from "@react-navigation/stack";
 import {NavigationContainer} from "@react-navigation/native";
 import { WelcomeScreen, Services, About,SignIn,Explore, ReserveScreen, ARVision, PickTime } from "./index";
