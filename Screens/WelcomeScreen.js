@@ -6,9 +6,8 @@ import WelcomeButton from "./components/welcomeComponent/WelcomeButton";
 function WelcomeScreen({navigation}) {
   return (
     <ScreenTemplate>
-    <WelcomeButton/>
+      <WelcomeButton/>
     </ScreenTemplate>
-      // Random stuff
   );
 }
 

@@ -31,26 +31,22 @@ const screenOptions = (route, color) => {
 };
 
 export default function App() {
-
-  const stackDefault = { headerShown: false };
-  return (
+    const stackDefault = { headerShown: false };
+    return (
     <NavigationContainer>
 
-      <Tab.Navigator // TODO Understand THis!!!
-          screenOptions={
-              ({route}) => ({
+        <Tab.Navigator
+            screenOptions={
+                ({route}) => ({
                     tabBarIcon: ({color}) => screenOptions(route, color),
                 })
-          }>
-        <Tab.Screen name={"Welcome Screen"} component={WelcomeScreen} />
-          <Tab.Screen name={"SignIn"} component={SignIn} />
-          <Tab.Screen name={"About"} component={About} />
-        <Tab.Screen name={"Services"} component={Services} />
-        <Tab.Screen name={"RoomReservationStack"} component={RoomReservationStack} />
-          <Tab.Screen name={"Explore"} component={Explore} />
-      </Tab.Navigator>
+            }>
+            <Tab.Screen name={"Home"} component={Explore} />
+            <Tab.Screen name={"Reserve"} component={ReserveScreen} />
+            <Tab.Screen name={"Services"} component={Services} />
+        </Tab.Navigator>
     </NavigationContainer>
-  );
+    );
 }
 
 

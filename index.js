@@ -16,5 +16,5 @@ export {
   ReserveScreen,
   ARVision,
   PickTime,
-    SignIn
+  SignIn
 }
