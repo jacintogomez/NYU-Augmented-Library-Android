@@ -102,10 +102,9 @@ const styles = StyleSheet.create({
   options2:{
     display: 'flex',
     flexDirection: 'row',
-    paddingLeft: '20%',
-    paddingRight: '20%',
-    marginLeft: '20%',
-    marginRight: '20%',
+    justifyContent: 'space-evenly',
+    marginLeft: '15%',
+    marginRight: '15%',
   },
   searchBar:{
     backgroundColor: 'white',
