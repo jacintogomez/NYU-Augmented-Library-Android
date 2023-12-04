@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   exploreBox:{
-    backgroundColor: 'white',
+    backgroundColor: '#9451B8',
     borderColor: '#57068C',
     padding: 20,
     borderRadius: 10,
@@ -88,8 +88,8 @@ const styles = StyleSheet.create({
     marginTop: 20,
     marginBottom: 20,
     alignSelf: 'center',
+    textAlign: 'center',
     position: 'relative',
-
   },
   exploreBoxHov:{
     borderColor: 'blue',
@@ -98,6 +98,14 @@ const styles = StyleSheet.create({
     display: 'flex',
     justifyContent: 'space-evenly',
     flexDirection: 'row',
+  },
+  options2:{
+    display: 'flex',
+    flexDirection: 'row',
+    paddingLeft: '20%',
+    paddingRight: '20%',
+    marginLeft: '20%',
+    marginRight: '20%',
   },
   searchBar:{
     backgroundColor: 'white',

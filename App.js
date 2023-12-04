@@ -30,6 +30,17 @@ const screenOptions = (route, color) => {
     return <Icon name={iconName} color={color} size={24} />;
 };
 
+const Stack = createStackNavigator();
+
+const ExploreStack = () => {
+  return (
+    <Stack.Navigator initialRouteName="Explore">
+      <Stack.Screen name="Explore" component={Explore} />
+      <Stack.Screen name="About" component={About} />
+    </Stack.Navigator>
+  );
+};
+
 export default function App() {
     const stackDefault = { headerShown: false };
     return (

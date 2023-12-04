@@ -1,4 +1,6 @@
 import React, {useState} from "react";
+import { useNavigation } from "@react-navigation/native";
+
 import {
   View,
   Text,
@@ -15,14 +17,15 @@ export default function Explore() {
   const [searchQuery, setSearchQuery] = useState('');
   const bords1={borderTopLeftRadius:15,borderBottomLeftRadius:15};
   const bords2={borderTopRightRadius:15,borderBottomRightRadius:15};
-  const setHovered=useState(false);
-  const isHovered=useState(false);
-  const presin=()=>{
-    setHovered(true);
-  }
-  const presout=()=>{
-    setHovered(false);
-  }
+  const navigation = useNavigation();
+
+  const navigateToAbout = () => {
+    navigation.navigate('About');
+  };
+
+  const navigateToSignIn = () => {
+    navigation.navigate('SignIn');
+  };
   return(
     <ScreenTemplate contentContainerStyle={styles.scrollView}>
       <ScrollView>
@@ -35,11 +38,11 @@ export default function Explore() {
               onChangeText={text=>setSearchQuery(text)}
               value={searchQuery}
             ></TextInput>
-            <Button title="Search" style={{flex: 1,...bords2}}></Button>
+            <Button title="Search" color='#57068C' style={{flex: 1,...bords2}}></Button>
           </View>
         </View>
-        <View style={styles.options}>\
-          <View style={styles.exploreBox}><Text>Books & More</Text></View>
+        <View style={styles.options}>
+          <View style={styles.exploreBox}><Text onPress={navigateToAbout}>Books & More</Text></View>
           <View style={styles.exploreBox}><Text>Articles and Databases</Text></View>
           <View style={styles.exploreBox}><Text>Course Reserve</Text></View>
         </View>
