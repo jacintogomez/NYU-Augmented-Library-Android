@@ -5,7 +5,6 @@ import {
   View,
   Text,
   TextInput,
-  TouchableHighlight,
   Button,
   ScrollView,
 } from 'react-native';
@@ -50,7 +49,7 @@ export default function Explore() {
           <View style={styles.exploreBox}><Text>About</Text></View>
           <View style={styles.exploreBox}><Text>Sign in</Text></View>
         </View>
-      </ScrollView>
+      </ScrollView>x
     </ScreenTemplate>
   )
 }
